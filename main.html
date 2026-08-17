@@ -1,33 +1,436 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Portfolio Takeoff</title>
     <link href="src/output.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bae8e9ac14.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-[#0B1220] lines-bg min-h-screen">
-<div class="bg-[#16233A] w-full">
-    <div class="max-w-6xl mx-auto uppercase px-6 h-8 flex items-center justify-between text-[#7C8AA0]">
-        <p class="font-plex text-[11px]">origin: Calgary, AB</p>
-        <p class="font-plex text-[11px]">squawk: 2026 &#8608; <span class="green-light">cleared for coding</span></p>
+<body class="bg-[#0B1220] min-h-screen">
+    <div class="bg-[#16233A] w-full">
+        <div class="max-w-6xl mx-auto uppercase px-6 h-8 flex items-center justify-between text-[#7C8AA0]">
+            <p class="font-plex text-[11px]">origin: Calgary, AB</p>
+            <p class="font-plex text-[11px]">squawk: 2026 &#8608; <span class="green-light">cleared for coding</span></p>
+        </div>
     </div>
+
     <nav class="h-17 bg-[#0B1220] w-full border-[#223354] border">
         <div class="px-6 max-w-6xl flex mx-auto h-full items-center justify-between">
-            <h1 class="text-white text-xl font-bold">DH101</h1>
-            <div class="font-plex flex text-xs tracking-widest uppercase gap-8">
-                <a href="#" class="text-[#7C8AA0]">Home</a>
-                <a href="#" class="text-[#7C8AA0]">Manifest</a>
-                <a href="#" class="text-[#7C8AA0]">Logbook</a>
-                <a href="#" class="text-[#7C8AA0]">Departures</a>
-                <a href="#" class="text-[#7C8AA0]">Tower</a>
+            <h2 class="text-white text-xl font-bold">DH101</h2>
+            <div class="font-plex flex text-xs tracking-widest uppercase gap-8 gray-light">
+                <a href="#manifest">Manifest</a>
+                <a href="#logbook">Coding Logbook</a>
+                <a href="#projects">Project Board</a>
             </div>
         </div>
     </nav>
 
-</div>
+    <div class="w-full striped-background border-[#223354] border">
+        <div class="px-6 max-w-6xl items-center mx-auto">
+            <div class="tracking-widest uppercase gap-8 pt-16">
+                <p class="gray-light text-[11px]">Departures · Terminal 1 · Developer </p>
+            </div>
+            <div class="bg-[#101B2D] h-30 mt-5 border-[#223354] border rounded-md">
+                <div class="gray-light text-xs tracking-widest uppercase grid grid-cols-3 gap-4 mt-7 text-center">
+                    <div><p class="font-plex">Flight</p></div>
+                    <div><p class="font-plex">Passenger</p></div>
+                    <div><p class="font-plex">Status</p></div>
 
+                    <div><p class="text-[#FFB020] text-base">DH-2026</p></div>
+                    <div><h1 class="text-xl text-white font-semibold">Devon Hurteau</h1></div>
+                    <div>
+                        <p class="font-plex flex items-center justify-center gap-2 green-light">
+                            <span class="inline-flex animate-pulse size-1 rounded-full bg-[#39FF88]"></span>
+                            Coding
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 mb-15">
+                <h1 class="font-semibold text-5xl tracking-tight text-white">
+                    From Tarmac To <span class="flex mt-2 text-6xl text-[#FFB020]">Terminal Window</span>
+                </h1>
+                <div class="mt-3">
+                    <p class="gray-light text-[16px] tracking-widest">Status: Developer · Clearance to Code </p>
+                    <a href="#projects"><button class="cursor-pointer rounded-lg mt-5 p-3 bg-[#FFB020] px-5 font-plex font-semibold">
+                        View Departure Projects
+                    </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="w-full" id="manifest">
+        <div class="px-6 max-w-6xl items-center mx-auto mt-20 mb-20">
+            <div class="flex overflow-hidden">
+                <div class="p-5 w-3xs h-142 mr-20 bg-[#101B2D] border-[#223354] border rounded-md flex flex-col uppercase shrink-0">
+                    <div class="flex-1 overflow-hidden">
+                        <img src="src/images/devon.jpg" alt="profile picture" class="w-full h-full object-cover rounded">
+                    </div>
+                    <div class="flex justify-between items-center mt-4 font-plex gray-light">
+                        <div><p class="text-xs">ID</p></div>
+                        <div><p class="text-xs text-white">DH-101</p></div>
+                    </div>
+                    <div class="flex justify-between items-center mt-3 font-plex gray-light">
+                        <div><p class="text-xs">Role</p></div>
+                        <div><p class="text-xs text-white">Developer</p></div>
+                    </div>
+                    <div class="flex justify-between items-center mt-3 font-plex gray-light">
+                        <div><p class="text-xs">Base</p></div>
+                        <div><p class="text-xs text-white">Calgary</p></div>
+                    </div>
+                    <div class="flex justify-between items-center mt-3 font-plex gray-light">
+                        <div><p class="text-xs">Clearance</p></div>
+                        <div><p class="text-xs text-white green-light">Active</p></div>
+                    </div>
+                </div>
+                <div class="min-w-0">
+                    <h5 class="font-plex text-xs text-[#FFB020] uppercase tracking-widest">Passenger Manifest</h5>
+                    <h1 class="text-3xl tracking-tighest text-white mt-2 font-bold">About</h1>
+                    <p class="gray-light mt-5">
+                        Hi, I'm Devon! I'm a full stack developer with a Graduate Certificate in Full Stack Web Development through Robertson College.
+                        At Flair Airlines, I built an internal full stack dispatch platform with custom middleware bridging REST and SOAP services
+                        into one unified system, helping track shift handovers, internal dispatch training records, RBNs, and delay alerts,
+                        along with scripts to extract FAA data including EDCT alerts and advisory alerts.
+                        Most of my recent personal work has leaned towards backend development.
+                        I work with clients on sportsbook automation, which involves aggregating odds across different platforms,
+                        reverse-engineering APIs, and building bots to pull and process data at scale. I enjoy solving real operational problems with code,
+                        whether that's automating a manual process or making sense of data that isn't meant to be easy to reach.
+                    </p>
+                    <div class="grid grid-cols-3 gap-5 mt-5">
+                        <div class="bg-[#101B2D] border-[#223354] border rounded-md">
+                            <div class="p-3 text-sm font-plex">
+                                <p class="gray-light">Technical Skill</p>
+                                <p class="text-white text-base">Python</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#101B2D] border-[#223354] border rounded-md">
+                            <div class="p-3 text-sm font-plex">
+                                <p class="gray-light">Technical Skill</p>
+                                <p class="text-white text-base">Postgres</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#101B2D] border-[#223354] border rounded-md">
+                            <div class="p-3 text-sm font-plex">
+                                <p class="gray-light">Technical Skill</p>
+                                <p class="text-white text-base">Javascript</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#101B2D] border-[#223354] border rounded-md">
+                            <div class="p-3 text-sm font-plex">
+                                <p class="gray-light">Skill</p>
+                                <p class="text-white text-base">Process Improvement</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#101B2D] border-[#223354] border rounded-md">
+                            <div class="p-3 text-sm font-plex">
+                                <p class="gray-light">Skill</p>
+                                <p class="text-white text-base">System Integrations</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#101B2D] border-[#223354] border rounded-md">
+                            <div class="p-3 text-sm font-plex">
+                                <p class="gray-light">Skill</p>
+                                <p class="text-white text-base">Attention to Detail</p>
+                            </div>
+                        </div>
+                        <a href="src/Devon%20Hurteau%20Resume.pdf" download="DevonHurteauResume.pdf">
+                            <button class="cursor-pointer rounded-lg mt-5 p-3 bg-[#FFB020] px-5 font-plex font-semibold">
+                                Download Resume
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="w-full bg-[#16233A]" id="logbook">
+        <div class="text-center h-360 pt-10">
+            <h5 class="font-plex text-xs text-[#FFB020] uppercase tracking-widest">
+                Coding Logbook
+            </h5>
+
+            <h1 class="text-3xl tracking-tighest text-white mt-2 font-bold">
+                Experience
+            </h1>
+
+            <div class="flex items-start justify-center gap-4 -translate-x-10 mt-8">
+                <div class="flex flex-col items-center">
+                    <div class="w-4 h-4 shrink-0 rounded-full bg-[#FFB020]"></div>
+                    <div class="w-0.5 h-65 bg-[#223354]"></div>
+                </div>
+
+                <div class="w-[520px] text-left">
+                    <div class="leading-none text-sm font-plex tracking-tighest text-[#FFB020]">
+                        Waypoint 01 · 2021 - 2022
+                    </div>
+
+                    <p class="mt-5 text-sm text-gray-500">
+                        2021-2022
+                        Mid 2021, I started my programming journey. I started by
+                        self-teaching myself C# basics and SQL Sever. Whilst working
+                        in the position of Aircraft Load Coordinator at Perimeter
+                        Aviation, I noticed that the systems and procedures were
+                        outdated. I Designed and implemented a system allowing
+                        multiple departments to communicate through one platform.
+                        This program greatly increased both productivity and allowed
+                        for more effective and clear communication.
+
+                        <br><br>
+
+                        In September of 2021 I enrolled in the Full Stack Web
+                        Development course at Roberston College.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex items-start justify-center gap-4 -translate-x-10">
+                <div class="flex flex-col items-center">
+                    <div class="w-4 h-4 shrink-0 rounded-full bg-[#FFB020]"></div>
+                    <div class="w-0.5 h-25 bg-[#223354]"></div>
+                </div>
+
+                <div class="w-[520px] text-left">
+                    <div class="leading-none text-sm font-plex tracking-tighest text-[#FFB020]">
+                        Waypoint 02 · 2022-2023
+                    </div>
+
+                    <p class="mt-5 text-sm text-gray-500">
+                        I shifted my programming focus toward Python, spending most of my free time learning its fundamentals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex items-start justify-center gap-4 -translate-x-10">
+                <div class="flex flex-col items-center">
+                    <div class="w-4 h-4 shrink-0 rounded-full bg-[#FFB020]"></div>
+                    <div class="w-0.5 h-55 bg-[#223354]"></div>
+                </div>
+
+                <div class="w-[520px] text-left">
+                    <div class="leading-none text-sm font-plex tracking-tighest text-[#FFB020]">
+                        Waypoint 03 · 2023-2024
+                    </div>
+
+                    <p class="mt-5 text-sm text-gray-500">
+                        I started applying the Python fundamentals I'd learned by building tools for a former colleague at
+                        Perimeter Aviation. The first version was a GUI application built with Tkinter that lets users upload a
+                        CSV file and automatically generate a cleaned, organized Excel report.
+
+                        <br><br>
+
+                        Toward the end of 2024, I picked up Django, PostgreSQL, and SQLite, and rebuilt that tool as a full
+                        web application, adding better SLA tracking, Airway Bill monitoring, and priority visibility.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex items-start justify-center gap-4 -translate-x-10">
+                <div class="flex flex-col items-center">
+                    <div class="w-4 h-4 shrink-0 rounded-full bg-[#FFB020]"></div>
+                    <div class="w-0.5 h-53 bg-[#223354]"></div>
+                </div>
+
+                <div class="w-[520px] text-left">
+                    <div class="leading-none text-sm font-plex tracking-tighest text-[#FFB020]">
+                        Waypoint 04 · 2024-2025
+                    </div>
+
+                    <p class="mt-5 text-sm text-gray-500">
+                        In early 2024, I started learning FastAPI and the fundamentals of REST API design. Later on in the year,
+                        a friend referred me to a few clients who needed help aggregating and extracting sportsbook odds.
+                        I built a set of bots that pulled odds from multiple sportsbooks, and packaged the results into a
+                        FastAPI service (DifferentOdds API V1), along with a comparison website that lined up esports and
+                        soccer odds side by side across sportsbooks. Along the way, I picked up Celery and Redis so odds data
+                        could be cached ahead of time, letting an endpoint return results instantly instead of waiting
+                        on a live sportsbook request every time it was called.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex items-start justify-center gap-4 -translate-x-10">
+                <div class="flex flex-col items-center">
+                    <div class="w-4 h-4 shrink-0 rounded-full bg-[#FFB020]"></div>
+                    <div class="w-0.5 h-99 bg-[#223354]"></div>
+                </div>
+
+                <div class="w-[520px] text-left">
+                    <div class="leading-none text-sm font-plex tracking-tighest text-[#FFB020]">
+                        Waypoint 05 · 2025-Current
+                    </div>
+
+                    <p class="mt-5 text-sm text-gray-500">
+                        I rebuilt my FastAPI service into a faster, more robust v2, adding a Same Game Parlay engine
+                        that compares thousands of parlay combinations across 8+ sportsbooks in real time and automatically
+                        flags the ones with the strongest value, alongside several other client projects in the sportsbook
+                        automation space.
+
+                        <br><br>
+
+                        I also rebuilt my earlier cargo tracking web app from the
+                        ground up as CargoReporter, a more robust version with duplicate AWB detection, a dedicated view
+                        for AWBs still outstanding under 30 hours, sent/not-sent status tracking, and a scanner that lets
+                        staff type in or scan an AWB's QR code to log it against its destination, along with client and
+                        freighter management.
+
+                        <br><br>
+                        I also joined Flair Airlines as a Developer / Technical Dispatcher, where I built an internal
+                        full-stack dispatch platform handling shift handovers, RBN tracking, dispatcher training records,
+                        and historical data and reporting, along with a custom middleware layer bridging REST and SOAP
+                        services into one synchronized system, and automated scripts that track FAA EDCT and advisory alerts
+                        and fuel-savings and passenger-load insights.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full" id="projects">
+        <div class="text-center h-200 pt-10">
+            <h5 class="font-plex text-xs text-[#FFB020] uppercase tracking-widest">
+                Project Board
+            </h5>
+
+            <h1 class="text-3xl tracking-tighest text-white mt-2 font-bold">
+                Projects
+            </h1>
+
+            <div class="max-w-[1100px] items-center mx-auto mt-5 rounded-lg overflow-hidden border bg-[#101B2D] border-[#223354]">
+                <table class="w-full table-fixed border-collapse text-left">
+                    <thead>
+                    <tr class="font-plex text-xs gray-light">
+                        <th class="border-b border-[#223354] px-4 py-2 w-[15%]">Flight</th>
+                        <th class="border-b border-[#223354] px-4 py-2 w-[15%]">Date</th>
+                        <th class="border-b border-[#223354] px-4 py-2 w-[40%]">Project</th>
+                        <th class="border-b border-[#223354] px-4 py-2 w-[15%]">Destination</th>
+                        <th class="border-b border-[#223354] px-4 py-2 w-[15%]">Status</th>
+                    </tr>
+                    </thead>
+                    <tbody class="divide-y divide-[#223354]">
+                        <tr class="font-plex text-xs">
+                            <td class="px-4 py-6 text-[#FFB020]">DH-100</td>
+                            <td class="px-4 py-6 gray-light">2021</td>
+                            <td class="px-4 py-6 wrap-break-word">
+                                <p class="font-bold text-white">Perimeter Threshold</p>
+                                <p class="gray-light mt-1 text-[9px]">Internal Flight Board & Cargo Board with Weight and Balance Calculator</p>
+                            </td>
+                            <td class="px-4 py-6 gray-light">
+                                <p class="text-blue-400 cursor-pointer"><a href="https://github.com/Hurteau101/Threshold" target="_blank">Github</a></p>
+                            </td>
+                            <td class="px-4 py-6 text-[#FF6B6B] flex items-center gap-2">
+                                <span class="inline-flex animate-pulse size-1 rounded-full bg-[#FF6B6B] leading-none"></span>
+                                Cancelled
+                            </td>
+                        </tr>
+
+                        <tr class="font-plex text-xs">
+                            <td class="px-4 py-6 text-[#FFB020]">DH-300</td>
+                            <td class="px-4 py-6 gray-light">2025</td>
+                            <td class="px-4 py-6 wrap-break-word">
+                                <p class="font-bold text-white">DifferentOdds Comparison</p>
+                                <p class="gray-light mt-1 text-[9px]">Compares live esports and soccer odds across sportsbooks</p>
+                            </td>
+                            <td class="px-4 py-6 gray-light">
+                                <p class="text-blue-400 cursor-pointer"><a href="https://github.com/Hurteau101/DifferentOdds-Web-Compare" target="_blank">Github</a></p>
+                            </td>
+                            <td class="px-4 py-6 text-[#FF6B6B] flex items-center gap-2">
+                                <span class="inline-flex animate-pulse size-1 rounded-full bg-[#FF6B6B] leading-none"></span>
+                                Cancelled
+                            </td>
+                        </tr>
+                        <tr class="font-plex text-xs">
+                            <td class="px-4 py-6 text-[#FFB020]">DH-400</td>
+                            <td class="px-4 py-6 gray-light">2026</td>
+                            <td class="px-4 py-6 wrap-break-word">
+                                <p class="font-bold text-white">DifferentOdds API V2</p>
+                                <p class="gray-light mt-1 text-[9px]">Pulls live odds, aggregated odds, and real-time same-game parlay (SGP) odds</p>
+                            </td>
+                            <td class="px-4 py-6 gray-light">
+                                <p class="text-blue-400 cursor-pointer"><a href="https://github.com/Hurteau101/DifferentOdds-API-V2" target="_blank">Github</a></p>
+                                <p class="text-blue-400 cursor-pointer mt-1"><a href="https://api.differentodds.com/" target="_blank">API</a></p>
+                            </td>
+                            <td class="px-4 py-6 green-light flex items-center gap-2">
+                                <span class="inline-flex animate-pulse size-1 rounded-full bg-[#39FF88] leading-none"></span>
+                                On Time
+                            </td>
+                        </tr>
+                        <tr class="font-plex text-xs">
+                            <td class="px-4 py-6 text-[#FFB020]">DH-401</td>
+                            <td class="px-4 py-6 gray-light">2026</td>
+                            <td class="px-4 py-6 wrap-break-word">
+                                <p class="font-bold text-white">Cargo Reporter</p>
+                                <p class="gray-light mt-1 text-[9px]">Uploads and sorts AWB data, manages freighters and clients, and scans AWBs for tracking</p>
+                            </td>
+                            <td class="px-4 py-6 gray-light">
+                                <p class="text-blue-400 cursor-pointer"><a href="https://github.com/Hurteau101/CargoReporter" target="_blank">Github</a></p>
+                                <p class="text-blue-400 cursor-pointer mt-1"><a href="https://www.cargo-reporter.ca/" target="_blank">Website</a></p>
+                            </td>
+                            <td class="px-4 py-6 green-light flex items-center gap-2">
+                                <span class="inline-flex animate-pulse size-1 rounded-full bg-[#39FF88] leading-none"></span>
+                                On Time
+                            </td>
+                        </tr>
+                        <tr class="font-plex text-xs">
+                            <td class="px-4 py-6 text-[#FFB020]">DH-402</td>
+                            <td class="px-4 py-6 gray-light">2026</td>
+                            <td class="px-4 py-6 wrap-break-word">
+                                <p class="font-bold text-white">BettorOdds Liquidity Bot</p>
+                                <p class="gray-light mt-1 text-[9px]">Extracts and processes liquidity lines, alerting on valuable opportunities</p>
+                            </td>
+                            <td class="px-4 py-6 gray-light">
+                                <p class="text-blue-400 cursor-pointer"><a href="https://github.com/Hurteau101/BettorOdds-Liquidity-Bot" target="_blank">Github</a></p>
+                            </td>
+                            <td class="px-4 py-6 green-light flex items-center gap-2">
+                                <span class="inline-flex animate-pulse size-1 rounded-full bg-[#39FF88] leading-none"></span>
+                                On Time
+                            </td>
+                        </tr>
+                        <tr class="font-plex text-xs">
+                            <td class="px-4 py-6 text-[#FFB020]">DH-403</td>
+                            <td class="px-4 py-6 gray-light">2026</td>
+                            <td class="px-4 py-6 wrap-break-word">
+                                <p class="font-bold text-white">Betropolis Bot</p>
+                                <p class="gray-light mt-1 text-[9px]">Extracts and filters esports lines from Betropolis, alerting on relevant odds</p>
+                            </td>
+                            <td class="px-4 py-6 gray-light">
+                                <p class="text-blue-400 cursor-pointer"><a href="https://github.com/Hurteau101/Betropolis-Bot-V2" target="_blank">Github</a></p>
+                            </td>
+                            <td class="px-4 py-6 green-light flex items-center gap-2">
+                                <span class="inline-flex animate-pulse size-1 rounded-full bg-[#39FF88] leading-none"></span>
+                                On Time
+                            </td>
+                        </tr>
+                        <tr class="font-plex text-xs">
+                            <td class="px-4 py-6 text-[#FFB020]">DH-404</td>
+                            <td class="px-4 py-6 gray-light">2026</td>
+                            <td class="px-4 py-6 wrap-break-word">
+                                <p class="font-bold text-white">Bridge Bot</p>
+                                <p class="gray-light mt-1 text-[9px]">Extracts bet data from Discord threads, sends it to the Pikkit API, and returns a bet link</p>
+                            </td>
+                            <td class="px-4 py-6 gray-light">
+                                <p class="text-blue-400 cursor-pointer"><a href="https://github.com/Hurteau101/Bridge_Bot" target="_blank">Github</a></p>
+                            </td>
+                            <td class="px-4 py-6 green-light flex items-center gap-2">
+                                <span class="inline-flex animate-pulse size-1 rounded-full bg-[#39FF88] leading-none"></span>
+                                On Time
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer class="max-w-6xl mx-auto px-6">
+        <div class="h-[2px] w-full bg-repeat-x my-6"
+             style="background-image: linear-gradient(to right, #ffffff 50%, transparent 50%); background-size: 30px 100%;">
+        </div>
+        <div class="flex justify-center gap-4 mb-4">
+            <a href="https://github.com/Hurteau101" target="_blank"><i class="fa-brands fa-github text-3xl text-[#FFB020] cursor-pointer"></i></a>
+            <a href="https://www.linkedin.com/in/devonhurteau" target="_blank"><i class="fa-brands fa-linkedin text-3xl text-[#FFB020] cursor-pointer"></i></a>
+            <a href="mailto:devonhurteau@gmail.com"><i class="fa-solid fa-envelope text-3xl text-[#FFB020] cursor-pointer"></i></a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -15,3 +15,25 @@ h1, h2, h3, h4, h5, h6 {
 .green-light {
     color: rgb(57, 255, 136);
 }
+
+.gray-light {
+    color: #7C8AA0;
+}
+
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+.striped-background {
+    background-color: #0B1220;
+    background-image: repeating-radial-gradient(
+            circle,
+            #0B1220 0px,
+            #0B1220 40px,
+            rgba(34, 51, 84, 0.4) 40px,
+            rgba(34, 51, 84, 0.4) 41px
+    );
+}
