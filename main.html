@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bae8e9ac14.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="src/images/favicon.ico">
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="src/main.js"></script>
 </head>
 <body class="bg-[#0B1220] min-h-screen">
     <div class="bg-[#16233A] w-full">
@@ -53,7 +55,8 @@
                     From Tarmac To <span class="flex mt-2 text-6xl text-[#FFB020]">Terminal Window</span>
                 </h1>
                 <div class="mt-3">
-                    <p class="gray-light text-[16px] tracking-widest">Status: Developer · Clearance to Code </p>
+                    <p class="gray-light text-[16px] tracking-widest min-h-[24px]" id="code-typer"></p>
+<!--                    <p class="gray-light text-[16px] tracking-widest">Status: Developer · Clearance to Code </p>-->
                     <a href="#projects"><button class="cursor-pointer rounded-lg mt-5 p-3 bg-[#FFB020] px-5 font-plex font-semibold">
                         View Departure Projects
                     </button></a>
@@ -67,7 +70,7 @@
             <div class="flex overflow-hidden">
                 <div class="p-5 w-3xs h-142 mr-20 bg-[#101B2D] border-[#223354] border rounded-md flex flex-col uppercase shrink-0">
                     <div class="flex-1 overflow-hidden">
-                        <img src="src/images/devon.jpg" alt="profile picture" class="w-full h-full object-cover rounded">
+                        <img src="src/images/profile.jpg" alt="profile picture" class="w-full h-full object-cover rounded">
                     </div>
                     <div class="flex justify-between items-center mt-4 font-plex gray-light">
                         <div><p class="text-xs">ID</p></div>
@@ -147,7 +150,7 @@
         </div>
     </div>
 
-    <div class="w-full bg-[#16233A]" id="logbook">
+    <div class="w-full bg-[#16233A] border-[#223354] border" id="logbook">
         <div class="text-center h-360 pt-10">
             <h5 class="font-plex text-xs text-[#FFB020] uppercase tracking-widest">
                 Coding Logbook
